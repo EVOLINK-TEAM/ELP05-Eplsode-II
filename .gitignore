@@ -1,0 +1,4 @@
+.pio
+lib/Evlk-74HC595-Library
+lib/Evlk-HPDL1414-Library
+lib/Evlk-NoPins-Library
