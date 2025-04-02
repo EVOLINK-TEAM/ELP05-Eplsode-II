@@ -9,11 +9,11 @@
 
 A amazing watch with hpdl1414.
 <p align="center">
- <img border="1px" width="80%" src="./images/main.jpg">
+ <img border="1px" width="80%" src="./images/main.jpg" alt="main.jpg">
 </p>
 
 <p align="center">
- <img border="1px" width="80%" src="./images/show1.gif">
+ <img border="1px" width="80%" src="./images/show1.gif" alt="show1.gif">
 </p>
 
 ## Features
@@ -29,7 +29,7 @@ A amazing watch with hpdl1414.
 9. BAT : 303030 280ma
 
 <p align="center">
- <img border="1px" width="50%" src="./images/struct.jpg">
+ <img border="1px" width="50%" src="./images/struct.jpg" alt="struct.jpg">
 </p>
 
 ## How To Program
@@ -43,11 +43,11 @@ After opening the back cover, you can see several hardware interfaces.
 5. LED_VOT_SWITCH : switch led drive level,include hpdl1414 and rgb(ws3231),vcc_vot as up(3v3), bat_vot as down(3.7 ~ 4.2).
 
 <p align="center">
- <img border="1px" width="50%" src="./images/backInterface.jpg">
+ <img border="1px" width="50%" src="./images/backInterface.jpg" alt="backInterface.jpg">
 </p>
 If you don't know how to program the watch, you need to get a st-link first, then connect the swd interface to the corresponding pins on the st-link (you can use a connector with spring-loaded test pins). Then use the usual method to program it.  
 <p align="left">  
- <img border="1px" width="70%" src="./images/connector with spring-loaded test pins.png">  
+ <img border="1px" width="70%" src="./images/connector with spring-loaded test pins.png" alt="connector.jpg">  
 </p>
 Some libraries may not be found on the Arduino library manager, you can get these libraries through the following methods:  
 
@@ -58,6 +58,7 @@ Some libraries may not be found on the Arduino library manager, you can get thes
 ## Power Mode
 
 The watch is divided into three power modes, Low Power Mode(<30%),Mid Power Mode(<70%),High Power Mode(<100%). The differences between the different power modes are as follows:  
+
 | Mode | CPU | hpdl1414 | led | rgb |  
 |:----:|:---:|:--------:|:---:|:---:|  
 | Low  | slow|   Time   |BlinkOnce|No|
@@ -69,8 +70,8 @@ The watch is divided into three power modes, Low Power Mode(<30%),Mid Power Mode
 Here is the actual circuit board of version 1.0:
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="./images/old_v1.0_img1.jpg" style="width: 40%;" />
-  <img src="./images/old_v1.0_img2.jpg" style="width: 40%;" />
+  <img src="./images/old_v1.0_img1.jpg" style="width: 40%;" alt="img1.jpg"/>
+  <img src="./images/old_v1.0_img2.jpg" style="width: 40%;" alt="img2.jpg"/>
 </div>  
 
 |Version | hpdl1414 |  mcu  | led | rgb | rtc | acce | btn | blu | wifi | charging |  
@@ -79,6 +80,12 @@ Here is the actual circuit board of version 1.0:
 |V2.0|2|stm32l051|yes|yes|ds3231|lis2wd|in|no|no|in wireless
 
 ## And More?
+
+<p align="center">
+ <img border="1px" width="30%" src="./images/pcb.png" alt="pcb.png">
+ <img border="1px" width="30%" src="./images/pcb2.png" alt="pcb2.png">
+ <img border="1px" width="30%" src="./images/pcb3.png" alt="pcb3.png">
+</p>
 
 [JLC](https://oshwhub.com/neko0.0/elp-05-eplsode-ii)  
 [github](https://github.com/EVOLINK-TEAM/ELP05-Eplsode-II)
