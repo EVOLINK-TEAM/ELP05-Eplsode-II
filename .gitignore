@@ -1,4 +1,5 @@
 .pio
-lib/Evlk-74HC595-Library
+.vscode
+lib/Evlk-Shift-Register-Library
 lib/Evlk-HPDL1414-Library
 lib/Evlk-NoPins-Library
