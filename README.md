@@ -77,9 +77,14 @@ Here is the actual circuit board of version 1.0:
 |Version | hpdl1414 |  mcu  | led | rgb | rtc | acce | btn | blu | wifi | charging |  
 |:------:|:--------:|:-----:|:---:|:---:|:---:|:----:|:---:|:---:|:----:|:--------:|
 |V1.0|2|esp8266|no|no|ds3231|no|out|yes|yes|out wireless|  
-|V2.0|2|stm32l051|yes|yes|ds3231|lis2wd|in|no|no|in wireless
+|V2.0|2|stm32l051|yes|yes|ds3231|lis2dw|in|no|no|in wireless|
 
-## And More?
+## Note
+
+- If the `STM32L051` board is not available in the `ststm32 platform` installed in platformio, please copy the [genericSTM32L051K8.json](genericSTM32L051K8.json) file from the directory to the `$PLATFORMIO_CORE_DIR/platforms/ststm32/boards/` directory, referring to [PLATFORMIO_CORE_DIR](https://docs.platformio.org/en/latest/envvars.html#envvar-PLATFORMIO_CORE_DIR).
+- The source code of `dfrobot/DFRobot_LIS@^1.0.1` library contains some `-Wreturn-type` warnings, which may lead to runtime errors in the related code. Therefore, developers are required to manually fix these issues.
+
+## More Details
 
 <p align="center">
  <img border="1px" width="30%" src="./images/pcb.png" alt="pcb.png">
